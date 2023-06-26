@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio using Bootstrap</title>
+
+  <!-- bootstrap 5 cdn links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+   integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/responsive-style.css">
+
+</head>
+<body >
+  <!-- Navbar section -->
+  <div class="header_wrapper">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/portfolio/logo2.png" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-stream navbaar-toggler-icon"></i>
+         
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="main-btn" href="#hireme">Hire me</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Navbar section exit -->
+
+  <!-- Banner section -->
+  <section id="home" class="banner_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center text-md-start">
+          <h6>WELCOME TO MY WORLD</h6>  
+          <h1>I'm Bidhya Khadka <br><span>Frontend Developer.</span></h1>
+          <div class="mt-4">
+            <a class="main-btn" href="">Download CV</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Banner section exit -->
+
+  <!-- About section -->
+  <section id="about" class="about_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <img src="./images/portfolio/myphoto.jpg" alt="about-us" class="img-fluid ">
+        </div>
+        <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+          <div class="my-3 mb-lg-0">
+            <span class="subtitle">My About Details</span>
+            <h2>About Me</h2>
+            <p>My name is Bidhya Khadka. I am a student of BCA. I am a front-end developer & i'm very passionate about my work. If you
+            want me to build a website, please contact me and we will get in touch soon.</p>
+          </div>
+
+          <div class="pt-4">
+            <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button"
+                  role="tab" aria-controls="pills-skill" aria-selected="true">Main Skills</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button"
+                  role="tab" aria-controls="pills-experience" aria-selected="false">Experience</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button"
+                  role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab">
+                <div class="single-progress">
+                  <h6>Designing</h6>
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+                </div>
+                <span class="label">45%</span>
+                </div>
+              </div>
+            </div>
+
+              <!-- <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab">...</div> -->
+
+              <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+                <ul class="text-start ps-0">
+                  <li><a href="#">BCA running <span>- TU University, Balkhu -2020</span></a></li>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- About section exit -->
+
+  <!-- Services section -->
+  <section id="services" class="services_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center mb-4">
+          <span class="subtitle">What I can do for you</span>
+          <h2>Services</h2>
+          <p>There are many variations,<br class="d-none d-md-block">but the majority suffered alteration.</p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card">
+            <div class="card-body text-md-start text-center">
+              <img src="./images/services/web-develop.svg" alt="web-development" class="img-fluid mb-4">
+          <h3>Web Development</h3>
+          <p>I can develop responsive websites and delivery you at the quickest time. Trust me on that one!</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card">
+            <div class="card-body text-md-start text-center">
+              <img src="./images/services/web-develop.svg" alt="ui/ux" class="img-fluid mb-4">
+              <h3>UI/UX</h3>
+              <p>I can develop responsive websites and delivery you at the quickest time. Trust me on that one!</p>
+        
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card">
+            <div class="card-body text-md-start text-center">
+              <img src="./images/services/web-develop.svg" alt="ui/ux" class="img-fluid mb-4">
+              <h3>UI/UX</h3>
+              <p>I can develop responsive websites and delivery you at the quickest time. Trust me on that one!</p>
+        
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services section exit -->
+
+  <!-- portfolio section -->
+  <section id="portfolio" class="portfolio_wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 text-center mb-4">
+          <span class="subtitle">My complete project</span>
+          <h2> Latest Projects</h2>
+          <p>Some of the project done by me</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/portfolio/portfolio-html-css.PNG');"></span>
+          </div>
+        </div> 
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/portfolio/landing-page.PNG');"></span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/portfolio/contact-us.PNG');"></span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0">
+            <span style="background-image: url('./images/portfolio/portfolio-html-css.PNG');"></span>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    
+
+  </section>
+
+  <!-- portfolio section exit-->
+
+  <!-- contact section -->
+  <section id="contact" class="contact_wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center" >
+        <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+          <span class="subtitle">My Complete Project</span>
+          <h2>Hire Me</h2>
+
+          <div class="row call_details mb-4">
+            <label class="col-sm-3 col-lg-4">Call us directly:</label>
+          
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="javascript:void(0)">9841099518</a>
+            </div>
+          
+            <label class="col-sm-3 col-lg-4">Contact Email:</label>
+            <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+              <a href="mailto:abc@gmail.com">kdkbidhya@gmail.com</a>
+            </div>
+          
+          </div>
+
+          <!-- contact us form section starts -->
+          <div class="container">
+            <h3 class="text-center text-primary">Contact Us</h3>
+            <form action="./index.html" method="get">
+          
+              <div class="row">
+                <div class="col-lg-12 col-md-6 col-12 mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="enter your name" required />
+                </div>
+
+                <div class="col-lg-12 col-md-6 col-12  form-floating mb-3">
+                  <input type="text" id="address" class="form-control" placeholder="your address" required>
+                  <label for="address">Address</label>
+                </div>
+          
+          
+                <div class="col-lg-12 col-md-6 col-12  mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="enter your email" required />
+                </div>
+                
+                <div class="col-lg-12 col-md-6 col-12  mb-3">
+                  <label for="phone" class="form-label">phone</label>
+                  <input type="text" id="phone" class="form-control" placeholder="enter your phone" pattern="[0-9]{10}" required />
+                </div>
+
+                
+          
+                <div class="col-lg-12 col-md-6 col-12  mb-3">
+                  <label for="description" class="form-label">Description</label>
+                  <textarea id="description" rows="3" class="form-control" placeholder="comment...." required></textarea>
+                </div>
+          
+              </div>
+          
+          
+              <div class="mb-4">
+                <label for="formFile" class="form-label">photo</label>
+                <input type="file" class="form-control" required>
+              </div>
+          
+              <div class="mb-4">
+                <input id="check" type="checkbox" class="form-check-input" required>
+                <label for="check" class="form-check-label"> I agree with terms and conditions</label>
+              </div>
+          
+             <button type="submit" class="main-btn">Submit</button>
+          
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+          <img src="./images/portfolio/contact.jpg" class="img-fluid" alt="contact image">
+        </div>
+        
+
+      </div>
+    </div>
+          
+          
+  </section>
+  <!-- contact section exit-->
+
+  <!-- footer section -->
+  <section id="footer" class="footer_wrapper mt-3 mt-md-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-6 text-center text-md-start">
+          <div class="footer-logo mb-3 mb-md-0">
+            <img src="./images/portfolio/logo2.png" alt="logo" class="img-fluid">
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+            <li>
+              <a href="https://www.linkedin.com/in/bidhya-khadka-9a9658268/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/vdya.kdk" target="_blank"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Bidhya-khadka" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <div class="copyright-part text-lg-start text-center mb-3 mb-lg-0">
+            <p class="mb-0">Copyright &copy;2023 <a href="#">bidhyakhadka.com.np</a>. All rights Reserved.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- footer section exit-->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- bootstrap js cdn links -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+      // nav bar hide
+        let navBar = document.querySelectorAll(".nav-link");
+        let navCollapse = document.querySelector(".navbar-collapse.collapse");
+        navBar.forEach((a) => {
+          a.addEventListener("click", () => {
+            navCollapse.classList.remove("show");
+          });
+        });
+    </script>
+   
+  
+</body>
+</html>
