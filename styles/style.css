@@ -32,22 +32,7 @@ body {
 a{
   text-decoration: none;
 }
-/* custom css */
-::-webkit-scrollbar{
-  width: 6px;
-}
-::-webkit-scrollbar-track{
-  background: var(--bg-dark-blue);
-}
-::-webkit-scrollbar-thumb{
-  background:var(--primary-color) ;
-}
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
-  -webkit-appearance: none;
-  margin: 0;
-}
 
 section{
   padding: 50px 0;
@@ -121,8 +106,7 @@ p{
   font-size: 16px;
   margin-bottom: 12px;
   background: var(--gradient-color);
-  -webkit-background-clip:text ;
-  -webkit-text-fill-color: transparent;
+
 }
 input:hover,
 input:focus,
@@ -135,9 +119,9 @@ button{
 
 
 /* 2 Navbar */
+
 .header_wrapper .navbar{
   padding: 15px 0;
-  -webkit-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
 }
@@ -150,15 +134,13 @@ button{
   color: var(--gray-color);
   line-height: 2px;
 }
-/* .header_wrapper .navbar-toggler:hover {
-  box-shadow: none;
-} */
+
 .header_wrapper .nav-item{
   margin: 0 10px;
 }
 .header_wrapper .nav-item .nav-link{
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--text-gray);
   display: inline-block;
@@ -191,7 +173,6 @@ button{
   left: 0;
   width: 100%;
   background-color: var(--bg-dark-blue);
-  -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
   box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
 }
 .header_scrolled .nav-item .nav-link:active,
@@ -216,7 +197,8 @@ button{
 }
 
 /*4  About */
-.about_wrapper img{
+.about_wrapper .show_image,
+.contact_wrapper .show_image{
   height: 400px;
   width: 400px;
   object-fit: cover;
@@ -307,9 +289,6 @@ button{
   background-size: cover;
 
 }
-/* .portfolio_wrapper .card:hover span{
-  background-position: bottom center;
-} */
 
 /*7  contact */
 .contact_wrapper .form-control,
